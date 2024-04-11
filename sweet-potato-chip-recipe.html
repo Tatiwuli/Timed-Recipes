@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timed Recipes</title>
+    <title>Sweet Potato Chips Recipe</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./assets/logo.png" alt="timed recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> home </a>
+          <a href="about.html" class="nav-link"> about </a>
+          <a href = "categories.html" class = "nav-link">categories</a>
+          <a href="recipes.html" class="nav-link"> recipes </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> contact </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+      <div class="recipe-page">
+        <section class="recipe-hero">
+          <img
+            src="./assets/recipes/sweet-potato.jpg" 
+            class="img recipe-hero-img"
+          />
+          <article class="recipe-info">
+            <h2>Sweet Potato Chips</h2>
+            <p>
+              With just a potato and a microwave, you can whip up crispy, golden chips that'll satisfy your snack cravings in minutes. 
+              
+            </p>
+            <!--Recipe icons-->
+            <div class="recipe-icons">
+              <!--Single recipe icon-->
+              <article>
+                <i class="fas fa-clock"></i>
+                <h5>Total time</h5>
+                <p>12 min.</p> 
+              </article>
+
+              <article>
+                <i class="fas fa-user-friends"></i>
+                <h5>serving</h5>
+                <p>1 serving</p>
+              </article>
+            </div> <!--CHECK-->
+
+          </article>
+        </section>
+       <!-- content -->
+       <section class="recipe-content">
+        <article>
+          <h3>Instructions</h3>
+          <!-- single instruction -->
+          <div class="single-instruction">
+
+            <header>
+              <p>step 1</p>
+              <div></div>
+            </header>
+            <p>
+              Wash and dry a medium-sized potato. Using a sharp knife or a mandoline slicer, 
+              slice the potato into thin, uniform slices. The thinner, the crispier!
+            </p>
+          </div>
+          <!-- end of single instruction -->
+          <!-- single instruction -->
+          <div class="single-instruction">
+            <header>
+              <p>step 2</p>
+              <div></div>
+            </header>
+            <p>
+              Lay the seasoned potato slices in a single layer on a microwave-safe plate. 
+              Make sure they're not overlapping to ensure even cooking.
+            </p>
+          </div>
+          <!-- end of single instruction -->
+          <!-- single instruction -->
+          <div class="single-instruction">
+            <header>
+              <p>step 3</p>
+              <div></div>
+            </header>
+            <p>
+              Cook the potato slices in the microwave on high for 3-4 minutes. 
+              Keep an eye on them—they can go from golden to burnt quickly!
+            </p>
+          </div>
+          <!-- end of single instruction-->
+          <!-- single instruction -->
+          <div class="single-instruction">
+            <header>
+              <p>step 4</p>
+              <div></div>
+            </header>
+            <p>
+              Carefully flip the potato slices over and return them to the microwave. Cook for an additional 2-3 minutes,
+               or until they're golden brown and crispy.
+            </p>
+          </div>
+          <!-- end of single instruction -->
+           <!-- single instruction -->
+           <div class="single-instruction">
+            <header>
+              <p>step 5</p>
+              <div></div>
+            </header>
+            <p>
+              Let the potato chips cool on the plate for a minute or two. They'll continue to crisp up as they cool down.
+            </p>
+          </div>
+          <!-- end of single instruction -->
+
+
+      
+          
+          </article>
+          <article class="second-column">
+            <div>
+              <h3>ingredients</h3>
+              <p class="single-ingredient">1 medium sweet potato/potato</p>
+              <p class="single-ingredient">Any seasonings: Salt, pepper, basil</p>
+              <p class="single-ingredient">Any oil (ideally olive)</p>
+            
+            </div>
+            <div> 
+              <h3>tools</h3>
+              <p class="single-tool">Microwave-saved plate</p>
+              <p class="single-tool">Paper Towel to dry the potato</p>
+            </div>
+
+          </article>
+          
+        </section>
+        <h4>Enjoy the snack or add an extra crunch to your salad!</h4>
+
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">SimplyRecipes</span> Built by
+        <a href="https://www.johnsmilga.com/">Coding Addict</a>
+      </p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

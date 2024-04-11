@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timed Recipes</title>
+    <title>Brownie Recipe</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./assets/logo.png" alt="timed recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> home </a>
+          <a href="about.html" class="nav-link"> about </a>
+          <a href = "categories.html" class = "nav-link">categories</a>
+          <a href="recipes.html" class="nav-link"> recipes </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> contact </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+      <div class="recipe-page">
+        <section class="recipe-hero">
+          <img
+            src="./assets/recipes/rice.jpg" 
+            class="img recipe-hero-img"
+          />
+          <article class="recipe-info">
+            <h2>Rice</h2>
+            <p>
+              Rice is the ultimate student staple, but who has time to wait for a pot to boil? With this microwave hack, 
+              you'll have perfectly fluffy rice ready to fuel your study sessions in minutes—no stove required 🍚.
+            </p>
+            <!--Recipe icons-->
+            <div class="recipe-icons">
+              <!--Single recipe icon-->
+              <article>
+                <i class="fas fa-clock"></i>
+                <h5>Total time</h5>
+                <p>12 min.</p> 
+              </article>
+
+              <article>
+                <i class="fas fa-user-friends"></i>
+                <h5>serving</h5>
+                <p>1 serving</p>
+              </article>
+            </div> <!--CHECK-->
+
+          </article>
+        </section>
+       <!-- content -->
+       <section class="recipe-content">
+        <article>
+          <h3>Instructions</h3>
+          <!-- single instruction -->
+          <div class="single-instruction">
+
+            <header>
+              <p>step 1 (optional)</p>
+              <div></div>
+            </header>
+            <p>
+              Measure 1/2 cup of rice into a microwave-safe bowl. Rinse the rice under cold water until the water runs clear. 
+             
+            </p>
+          </div>
+          <!-- end of single instruction -->
+          <!-- single instruction -->
+          <div class="single-instruction">
+            <header>
+              <p>step 2</p>
+              <div></div>
+            </header>
+            <p>
+              Pour 1 cup of water into the bowl with the rinsed rice. 
+              The ratio of water to rice is crucial for perfect results, so don't skip this step!
+            </p>
+          </div>
+          <!-- end of single instruction -->
+          <!-- single instruction -->
+          <div class="single-instruction">
+            <header>
+              <p>step 3</p>
+              <div></div>
+            </header>
+            <p>
+              Cover the bowl with a microwave-safe lid or plate or a paper towel. This helps trap steam and ensures even cooking.
+            </p>
+          </div>
+          <!-- end of single instruction-->
+          <!-- single instruction -->
+          <div class="single-instruction">
+            <header>
+              <p>step 4</p>
+              <div></div>
+            </header>
+            <p>
+              Cook the rice on high for 5 minutes. Then, carefully remove the bowl from the microwave and give the rice a quick stir.
+            </p>
+          </div>
+          <!-- end of single instruction -->
+           <!-- single instruction -->
+           <div class="single-instruction">
+            <header>
+              <p>step 5</p>
+              <div></div>
+            </header>
+            <p>
+              Return the bowl to the microwave and cook for an additional 5 minutes. 
+              If you're making a larger batch, adjust the cooking time accordingly.
+            </p>
+          </div>
+          <!-- end of single instruction -->
+
+      
+          
+          </article>
+          <article class="second-column">
+            <div>
+              <h3>ingredients</h3>
+              <p class="single-ingredient">1/2 cup (120ml) of rice </p>
+              <p class="single-ingredient">1 cup (240ml) of water </p>
+            
+            </div>
+            <div> 
+              <h3>tools</h3>
+              <p class="single-tool">Microwave-saved bowl</p>
+              <p class="single-tool">Microwave-saved lid/plate/paper towel</p>
+              <p class="single-tool">A cup to measure rice</p>
+            </div>
+
+          </article>
+          
+        </section>
+        <h4>Enjoy a mug of comfort ❤️</h4>
+
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">SimplyRecipes</span> Built by
+        <a href="https://www.johnsmilga.com/">Coding Addict</a>
+      </p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
