@@ -49,7 +49,7 @@ html {
   --backgroundColor: var(--grey-50);
   --textColor: var(--grey-900);
   --borderRadius: 0.25rem;
-  --letterSpacing: 1px;
+  --letterSpacing: 0px;
   --transition: 0.3s ease-in-out all;
   --max-width: 1120px;
   --fixed-width: 600px;
@@ -111,7 +111,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: 1.30rem;
 }
 
 small,
@@ -475,14 +475,13 @@ Recipes
 .recipes-list {
   display: grid;
   gap: 2rem 1rem;
-  padding-bottom: 3rem;
+
 }
 .categories-container {
   order: 1;
   display: flex;
-
   flex-direction: column;
-  padding-bottom: 3rem;
+  
   
 }
 .categories-container h4 {
@@ -552,7 +551,7 @@ Recipes
   }
   .categories-container {
     order: 0;
-    /* background: blue; */
+    
   }
   .categories-list {
     display: grid;
@@ -752,7 +751,7 @@ Recipes - expanding screen
   }
 
   .recipe h5 {
-    font-size: 1.15rem; /* Adjusted font size for the recipe heading */
+    font-size: 1.15rem; 
   }
 
   
@@ -797,7 +796,7 @@ A RECIPE PAGE Template
 .recipe-icons h5,
 .recipe-icons p {
   margin-bottom: 0;
-  font-size: 0.85em;
+ 
 }
 
 .recipe-icons p {
