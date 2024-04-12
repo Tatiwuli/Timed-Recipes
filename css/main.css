@@ -830,8 +830,9 @@ A RECIPE PAGE Template
 .recipe-content {
   padding: 3rem 0;
   display: grid;
-  gap: 4rem;
+ 
 }
+
 
 .single-instruction header {
   display: grid;
@@ -898,7 +899,7 @@ A RECIPE PAGE Template
     grid-template-areas:
       "ingredients"
       "instructions";
-    gap: 4rem;
+    gap: 1rem;
   }
 
   .ingredients-and-tools {
@@ -986,6 +987,10 @@ Contact Page
   }
 }
 
+.gif{
+  width:10em;
+  height: 10em;
+}
 /*
 =============== 
 categories Page
