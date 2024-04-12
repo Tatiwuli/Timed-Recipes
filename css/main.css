@@ -42,8 +42,8 @@ html {
   --green-dark: #0f5132;
 
   /* fonts  */
-  --headingFont: 'Montserrat', sans-serif;
-  --bodyFont: 'Montserrat', sans-serif;
+  --headingFont: 'Inter';
+  --bodyFont: 'Inter';
   --smallText: 0.7em;
   /* rest of the vars */
   --backgroundColor: var(--grey-50);
@@ -760,7 +760,7 @@ Recipes - expanding screen
 
 /*
 =============== 
-Recipes Template
+A RECIPE PAGE Template
 ===============
 */
 
@@ -773,10 +773,12 @@ Recipes Template
   height: 300px;
   border-radius: var(--borderRadius);
 }
+
 .recipe-info p {
   color: var(--black);
   font-size: medium;
 }
+
 .recipe-icons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -785,11 +787,12 @@ Recipes Template
   text-align: center;
   align-items: center;
 }
+
 .recipe-icons i {
-  
   font-size: 1.5rem;
   color: var(--primary-500);
 }
+
 .recipe-icons h5,
 .recipe-icons p {
   margin-bottom: 0;
@@ -799,6 +802,7 @@ Recipes Template
 .recipe-icons p {
   color: var(--grey-600);
 }
+
 .recipe-categories {
   display: flex;
   align-items: center;
@@ -806,6 +810,7 @@ Recipes Template
   font-size: 0.6em;
   font-weight: 600;
 }
+
 .recipe-categories a {
   background: var(--primary-500);
   border-radius: var(--borderRadius);
@@ -816,29 +821,18 @@ Recipes Template
   text-transform: capitalize;
 }
 
-.recipe-page h4{
-    display: block;
-    margin-inline-start: 2px;
-    margin-inline-end: 2px;
-    
+.recipe-page h4 {
+  display: block;
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
 }
 
-@media screen and (min-width: 992px) {
-  .recipe-hero {
-    grid-template-columns: 4fr 5fr;
-    align-items: center;
-  }
-}
 .recipe-content {
   padding: 3rem 0;
   display: grid;
-  gap: 2rem 5rem;
+  gap: 4rem;
 }
-@media screen and (min-width: 992px) {
-  .recipe-content {
-    grid-template-columns: 2fr 1fr;
-  }
-}
+
 .single-instruction header {
   display: grid;
   font-size: large;
@@ -847,16 +841,22 @@ Recipes Template
   align-items: center;
 }
 
-.single-instruction header h4{
-  font-size:xx-large;
+.single-instruction header h4 {
+  font-size: xx-large;
 }
+
+.single-instruction p{
+  font-size: 1.10em;
+}
+
 .single-instruction header p {
   text-transform: capitalize;
   font-weight: 600;
-  font-size: medium;
+  font-size: 1.15em;
   color: #f89857;
   margin-bottom: 0;
 }
+
 .single-instruction > p {
   color: var(--grey-700);
 }
@@ -866,23 +866,52 @@ Recipes Template
   background: var(--grey-300);
 }
 
-.second-column {
+.ingredients-and-tools {
   display: grid;
-  row-gap: 2rem;
+  row-gap: 6rem;
+}
+
+.ingredients-and-tools h3 {
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 2px solid var(--grey-300);
 }
 
 .single-ingredient {
-  border-bottom: 2px solid var(--grey-300);
-  padding-bottom: 0.75rem;
   color: var(--grey-700);
-}
-.single-tool {
-  border-bottom: 2px solid var(--grey-300);
-  padding-bottom: 0.75rem;
-  color: var(--black);
-  text-transform: capitalize;
+  font-size: 1.25rem;
 }
 
+.single-tool {
+    color: var(--black);
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 992px) {
+  .recipe-hero {
+    grid-template-columns: 4fr 5fr;
+    align-items: center;
+  }
+
+  .recipe-content {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "ingredients"
+      "instructions";
+    gap: 4rem;
+  }
+
+  .ingredients-and-tools {
+    grid-area: ingredients;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+  }
+
+  .recipe-content > article:last-child {
+    grid-area: instructions;
+  }
+}
 
 /*
 =============== 
